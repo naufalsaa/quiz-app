@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+section p img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+section img {
+  display: block;
+  margin: auto; /* Untuk memastikan gambar berada di tengah */
+  max-width: 100%; /* Agar gambar tidak melebihi lebar kontainer */
+  height: auto; /* Agar gambar tetap proporsional */
+}
+
+section li {
+  padding: 15px;
+  margin: 0;
+  position: relative;
+}
+
+section li::before {
+  content: '\2022'; /* Kode karakter untuk ikon bullet (•) */
+  color: #333;
+  font-size: 20px;
+  margin-right: 5px;
+  position: absolute;
+  left: 0;
+}
+
+section h2 {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+}
+
+section p,
+section ul {
+  padding: 15px;
+  margin: 0;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 48%; /* Set width as per your preference */
+}
+
+.card h2 {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 0;
+}
+
+.card iframe {
+  width: 100%;
+  height: 300px; /* Set height as per your preference */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+header {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+article {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.copyright img {
+  width: 23px; /* Sesuaikan ukuran gambar sesuai kebutuhan Anda */
+  height: auto;
+  margin-right: 5px; /* Atur margin sesuai kebutuhan */
+  vertical-align: middle;
+}
