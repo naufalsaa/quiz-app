@@ -88,6 +88,18 @@ ul {
   padding: 0;
 }
 
+.custom-counter {
+  counter-reset: step-counter;
+  list-style-type: decimal; /* Remove default list styling */
+}
+
+.custom-counter li::before {
+  list-style-type: decimal;
+  counter-increment: step-counter;
+  content: none; /* Display the counter value as a decimal number */
+}
+
+
 li {
   margin-bottom: 8px;
 }
